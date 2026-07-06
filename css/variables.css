@@ -1,0 +1,111 @@
+/* ========================================
+   DESIGN TOKENS — EVARISTE AI Agents
+   ======================================== */
+
+:root {
+  /* ---- Background ---- */
+  --bg-primary: #0c1426;
+  --bg-secondary: #111d35;
+  --bg-tertiary: #162040;
+
+  /* ---- Surfaces (glassmorphism) ---- */
+  --surface: rgba(255, 255, 255, 0.04);
+  --surface-hover: rgba(255, 255, 255, 0.08);
+  --surface-active: rgba(255, 255, 255, 0.12);
+  --glass: rgba(255, 255, 255, 0.06);
+  --glass-border: rgba(255, 255, 255, 0.1);
+
+  /* ---- Accent: Blue (medium) ---- */
+  --blue: #4A90D9;
+  --blue-light: #6AA8E8;
+  --blue-dark: #3A73B0;
+  --blue-glow: rgba(74, 144, 217, 0.25);
+  --blue-bg: rgba(74, 144, 217, 0.12);
+
+  /* ---- Accent: Green (pastel) ---- */
+  --green: #7DD3A8;
+  --green-light: #A0E8C4;
+  --green-dark: #5CB88A;
+  --green-glow: rgba(125, 211, 168, 0.25);
+  --green-bg: rgba(125, 211, 168, 0.12);
+
+  /* ---- Accent: Orange (pastel) ---- */
+  --orange: #F5A962;
+  --orange-light: #F8C48A;
+  --orange-dark: #E08C3E;
+  --orange-glow: rgba(245, 169, 98, 0.25);
+  --orange-bg: rgba(245, 169, 98, 0.12);
+
+  /* ---- Text ---- */
+  --text-primary: #E8EDF5;
+  --text-secondary: #8899B4;
+  --text-muted: #5A6B85;
+
+  /* ---- Borders ---- */
+  --border: rgba(255, 255, 255, 0.08);
+  --border-hover: rgba(255, 255, 255, 0.15);
+  --border-active: rgba(255, 255, 255, 0.22);
+
+  /* ---- Spacing (4px scale) ---- */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+
+  /* ---- Border-radius ---- */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  /* ---- Shadows ---- */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.4);
+  --shadow-glow-blue: 0 0 20px var(--blue-glow);
+  --shadow-glow-green: 0 0 20px var(--green-glow);
+  --shadow-glow-orange: 0 0 20px var(--orange-glow);
+
+  /* ---- Typography ---- */
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-heading: 'Outfit', 'Inter', sans-serif;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 2rem;
+  --text-4xl: 2.5rem;
+  --text-5xl: 3.5rem;
+
+  --leading-tight: 1.2;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.7;
+
+  /* ---- Transitions ---- */
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+  --transition-slow: 400ms ease;
+  --transition-spring: 500ms cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* ---- Z-index ---- */
+  --z-base: 1;
+  --z-dropdown: 10;
+  --z-sticky: 100;
+  --z-modal: 1000;
+
+  /* ---- Layout ---- */
+  --container-max: 1280px;
+  --nav-height: 72px;
+}

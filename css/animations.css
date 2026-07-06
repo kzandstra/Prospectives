@@ -1,0 +1,131 @@
+/* ========================================
+   ANIMATIONS & TRANSITIONS
+   ======================================== */
+
+/* ---- Scroll reveal: fade-in from below ---- */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Staggered delay for grid children */
+.fade-in:nth-child(1)  { transition-delay: 0.05s; }
+.fade-in:nth-child(2)  { transition-delay: 0.10s; }
+.fade-in:nth-child(3)  { transition-delay: 0.15s; }
+.fade-in:nth-child(4)  { transition-delay: 0.20s; }
+.fade-in:nth-child(5)  { transition-delay: 0.25s; }
+.fade-in:nth-child(6)  { transition-delay: 0.30s; }
+.fade-in:nth-child(7)  { transition-delay: 0.35s; }
+.fade-in:nth-child(8)  { transition-delay: 0.40s; }
+.fade-in:nth-child(9)  { transition-delay: 0.45s; }
+.fade-in:nth-child(10) { transition-delay: 0.50s; }
+.fade-in:nth-child(11) { transition-delay: 0.55s; }
+.fade-in:nth-child(12) { transition-delay: 0.60s; }
+
+/* ---- Slide in from left ---- */
+.slide-left {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.slide-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* ---- Scale in ---- */
+.scale-in {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.scale-in.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* ---- Keyframe: pulse ---- */
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%      { opacity: 0.6; transform: scale(1.15); }
+}
+
+.pulse { animation: pulse 2s ease-in-out infinite; }
+
+/* ---- Keyframe: gradient shift (hero background) ---- */
+@keyframes gradientShift {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* ---- Keyframe: grid pulse (hero grid) ---- */
+@keyframes gridPulse {
+  0%, 100% { opacity: 0.03; }
+  50%      { opacity: 0.08; }
+}
+
+/* ---- Keyframe: float ---- */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-10px); }
+}
+
+/* ---- Keyframe: shimmer loading ---- */
+@keyframes shimmer {
+  0%   { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.shimmer {
+  background: linear-gradient(
+    90deg,
+    var(--surface) 25%,
+    var(--surface-hover) 50%,
+    var(--surface) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s ease-in-out infinite;
+}
+
+/* ---- Keyframe: spin ---- */
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.spin { animation: spin 1s linear infinite; }
+
+/* ---- Keyframe: glow pulse ---- */
+@keyframes glowPulse {
+  0%, 100% { box-shadow: 0 0 5px var(--blue-glow); }
+  50%      { box-shadow: 0 0 20px var(--blue-glow), 0 0 40px var(--blue-glow); }
+}
+
+/* ---- Keyframe: count up reveal ---- */
+@keyframes countReveal {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ---- Reduced motion ---- */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .fade-in, .slide-left, .scale-in {
+    opacity: 1;
+    transform: none;
+  }
+}

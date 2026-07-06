@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portail des agents IA développés avec Microsoft Copilot Studio — EVARISTE. Découvrez et accédez aux assistants intelligents de l'entreprise.">
+  <meta name="theme-color" content="#0c1426">
+  <title>Agents IA — Copilot Studio | EVARISTE</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/layout.css">
+
+  <!-- Favicon (inline SVG) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%234A90D9'/><text y='70' x='15' font-size='60' fill='white' font-family='sans-serif' font-weight='bold'>IA</text></svg>">
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="nav" id="nav" role="navigation" aria-label="Navigation principale">
+    <div class="nav__container">
+      <a href="#" class="nav__logo" aria-label="EVARISTE - Accueil">
+        <div class="nav__logo-icon" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8V4H8"/><rect x="4" y="8" width="16" height="12" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/></svg>
+        </div>
+        EVARISTE <span style="color: var(--blue); font-weight: 400; margin-left: 2px;">IA</span>
+      </a>
+
+      <div class="nav__links" id="nav-links">
+        <a href="#accueil" class="nav__link active">Accueil</a>
+        <a href="#agents" class="nav__link">Agents</a>
+        <a href="#sharepoint" class="nav__link">SharePoint</a>
+        <a href="#demos" class="nav__link">Démos</a>
+        <a href="#nouvelles" class="nav__link">Nouvelles IA</a>
+      </div>
+
+      <button class="nav__hamburger" id="nav-hamburger" aria-label="Menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="accueil">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="hero__grid" aria-hidden="true"></div>
+
+      <div class="hero__content">
+        <div class="hero__badge scale-in">
+          <span class="hero__badge-dot" aria-hidden="true"></span>
+          Microsoft Copilot Studio
+        </div>
+
+        <h1 class="hero__title fade-in">Vos Agents IA</h1>
+
+        <p class="hero__subtitle fade-in">
+          Découvrez et accédez aux assistants intelligents développés avec
+          Microsoft Copilot Studio pour simplifier votre quotidien.
+        </p>
+
+        <div class="hero__stats fade-in">
+          <div class="hero__stat">
+            <div class="hero__stat-number blue" id="stat-agents">0</div>
+            <div class="hero__stat-label">Agents</div>
+          </div>
+          <div class="hero__stat">
+            <div class="hero__stat-number green" id="stat-categories">0</div>
+            <div class="hero__stat-label">Catégories</div>
+          </div>
+          <div class="hero__stat">
+            <div class="hero__stat-number orange" id="stat-active">0</div>
+            <div class="hero__stat-label">Actifs</div>
+          </div>
+        </div>
+
+        <div class="hero__cta fade-in">
+          <a href="#agents" class="btn btn--primary">
+            Explorer les agents
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CATALOGUE DES AGENTS ===== -->
+    <section class="section" id="agents">
+      <div class="container">
+        <div class="section__header slide-left">
+          <div class="section__eyebrow">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8V4H8"/><rect x="4" y="8" width="16" height="12" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/></svg>
+            Catalogue
+          </div>
+          <h2 class="section__title">Nos Agents Intelligents</h2>
+          <p class="section__subtitle">
+            Explorez notre catalogue d'agents IA et trouvez l'assistant qui correspond à vos besoins.
+          </p>
+        </div>
+
+        <!-- Search -->
+        <div class="search-container fade-in">
+          <span class="search-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </span>
+          <input type="text" class="search-input" id="search-input" placeholder="Rechercher un agent..." aria-label="Rechercher un agent">
+        </div>
+
+        <!-- Category Filters -->
+        <div class="filter-bar" id="filter-bar" role="group" aria-label="Filtres par catégorie"></div>
+
+        <!-- Agents Grid (rendered by JS) -->
+        <div class="agents-grid" id="agents-grid" role="list" aria-label="Liste des agents"></div>
+      </div>
+    </section>
+
+    <!-- ===== LIENS SHAREPOINT ===== -->
+    <section class="section section--alt" id="sharepoint">
+      <div class="container">
+        <div class="section__header slide-left">
+          <div class="section__eyebrow green">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            SharePoint
+          </div>
+          <h2 class="section__title">Sites de l'entreprise</h2>
+          <p class="section__subtitle">
+            Accédez rapidement aux ressources et sites SharePoint de l'entreprise.
+          </p>
+        </div>
+
+        <!-- SP Grid (rendered by JS) -->
+        <div class="sp-grid" id="sp-grid" role="list" aria-label="Liens SharePoint"></div>
+      </div>
+    </section>
+
+    <!-- ===== DÉMONSTRATIONS VIDÉO ===== -->
+    <section class="section" id="demos">
+      <div class="container">
+        <div class="section__header slide-left">
+          <div class="section__eyebrow orange">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            Démonstrations
+          </div>
+          <h2 class="section__title">Vidéos de démonstration</h2>
+          <p class="section__subtitle">
+            Découvrez les agents en action à travers nos vidéos de présentation.
+          </p>
+        </div>
+
+        <!-- Videos Grid (rendered by JS) -->
+        <div class="videos-grid" id="videos-grid" role="list" aria-label="Démonstrations vidéo"></div>
+      </div>
+    </section>
+
+    <!-- ===== NOUVELLES IA ===== -->
+    <section class="section section--alt" id="nouvelles">
+      <div class="container">
+        <div class="section__header slide-left">
+          <div class="section__eyebrow">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"/><path d="M18 14h-8"/><path d="M15 18h-5"/><path d="M10 6h8v4h-8V6Z"/></svg>
+            Actualités
+          </div>
+          <h2 class="section__title">Nouvelles IA</h2>
+          <p class="section__subtitle">
+            Les dernières actualités et avancées en intelligence artificielle.
+          </p>
+        </div>
+
+        <!-- News content (rendered by JS) -->
+        <div class="news-container scale-in" id="news-content"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__content">
+        <div class="footer__brand">
+          <div class="footer__brand-name">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--blue)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8V4H8"/><rect x="4" y="8" width="16" height="12" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/></svg>
+            EVARISTE IA
+          </div>
+          <p class="footer__brand-desc">
+            Portail des agents intelligents développés avec Microsoft Copilot Studio.
+            Simplifiez votre quotidien grâce à l'intelligence artificielle.
+          </p>
+        </div>
+
+        <div>
+          <div class="footer__section-title">Navigation</div>
+          <div class="footer__links">
+            <a href="#accueil" class="footer__link">Accueil</a>
+            <a href="#agents" class="footer__link">Agents IA</a>
+            <a href="#sharepoint" class="footer__link">SharePoint</a>
+            <a href="#demos" class="footer__link">Démonstrations</a>
+            <a href="#nouvelles" class="footer__link">Nouvelles IA</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="footer__section-title">Ressources</div>
+          <div class="footer__links">
+            <a href="#" class="footer__link" target="_blank" rel="noopener">Copilot Studio</a>
+            <a href="#" class="footer__link" target="_blank" rel="noopener">Documentation</a>
+            <a href="#" class="footer__link" target="_blank" rel="noopener">Support IT</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <div class="footer__copyright">
+          © 2025 EVARISTE — Tous droits réservés
+        </div>
+        <div class="footer__tech">
+          Propulsé par Microsoft Copilot Studio
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="back-to-top" aria-label="Retour en haut">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+  </button>
+
+  <!-- Scripts -->
+  <script src="js/agents-data.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>

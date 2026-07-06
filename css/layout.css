@@ -1,0 +1,190 @@
+/* ========================================
+   LAYOUT — Responsive grid & breakpoints
+   ======================================== */
+
+/* ---- Tablet (≤ 1024px) ---- */
+@media (max-width: 1024px) {
+  .hero__stats {
+    gap: var(--space-8);
+  }
+
+  .agents-grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+
+  .footer__content {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-8);
+  }
+}
+
+/* ---- Mobile landscape (≤ 768px) ---- */
+@media (max-width: 768px) {
+  :root {
+    --nav-height: 64px;
+  }
+
+  /* Nav → hamburger */
+  .nav__links {
+    position: fixed;
+    top: var(--nav-height);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(12, 20, 38, 0.98);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2);
+    opacity: 0;
+    visibility: hidden;
+    transition: all var(--transition-base);
+  }
+
+  .nav__links.open {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav__link {
+    font-size: var(--text-lg);
+    padding: var(--space-3) var(--space-6);
+  }
+
+  .nav__hamburger {
+    display: flex;
+  }
+
+  /* Hero */
+  .hero {
+    min-height: auto;
+    padding-top: calc(var(--nav-height) + var(--space-16));
+    padding-bottom: var(--space-12);
+  }
+
+  .hero__stats {
+    flex-direction: column;
+    gap: var(--space-4);
+    align-items: center;
+  }
+
+  .hero__stat {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+  }
+
+  .hero__stat-number {
+    font-size: var(--text-2xl);
+  }
+
+  /* Sections */
+  .section {
+    padding: var(--space-16) 0;
+  }
+
+  /* Grids → single column */
+  .agents-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sp-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .videos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Filters → horizontal scroll */
+  .filter-bar {
+    justify-content: flex-start;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding-bottom: var(--space-2);
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .filter-bar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .filter-btn {
+    flex-shrink: 0;
+  }
+
+  /* Footer */
+  .footer__content {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    gap: var(--space-4);
+    text-align: center;
+  }
+
+  /* Modal */
+  .modal {
+    max-height: 95vh;
+    margin: var(--space-2);
+    border-radius: var(--radius-lg);
+  }
+
+  .modal__body iframe {
+    height: 400px;
+  }
+}
+
+/* ---- Mobile portrait (≤ 480px) ---- */
+@media (max-width: 480px) {
+  .container {
+    padding: 0 var(--space-4);
+  }
+
+  .hero__title {
+    font-size: 2rem;
+  }
+
+  .hero__subtitle {
+    font-size: var(--text-base);
+  }
+
+  .agent-card {
+    padding: var(--space-5);
+  }
+
+  .agent-card__actions {
+    flex-direction: column;
+  }
+
+  .section__title {
+    font-size: 1.5rem;
+  }
+
+  .section__header {
+    margin-bottom: var(--space-10);
+  }
+
+  .modal-overlay {
+    padding: var(--space-2);
+  }
+}
+
+/* ---- SharePoint iframe context (very small) ---- */
+@media (max-width: 400px) {
+  .nav {
+    position: relative;
+    height: auto;
+    padding: var(--space-3) 0;
+  }
+
+  .hero {
+    min-height: auto;
+    padding-top: var(--space-8);
+  }
+}
