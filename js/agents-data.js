@@ -15,7 +15,7 @@ const AGENTS_DATA = [
     icon: "scales",
     shortDesc: "Consultez la réglementation et obtenez des réponses juridiques adaptées au secteur des travaux publics.",
     longDesc: "L'Assistant Juridique vous accompagne dans vos recherches réglementaires et juridiques. Il peut répondre à vos questions sur le droit du travail, les marchés publics, la responsabilité civile et pénale, et bien plus encore. Basé sur une base de connaissances actualisée, il fournit des réponses précises et sourcées.",
-    embedUrl: "",
+    embedUrl: "https://adminevariste.sharepoint.com/sites/outils-prospectives/Documents%20partages/Copilot%20Studio%20Agents?id=/sites/outils-prospectives/Documents%20partages/Copilot%20Studio%20Agents/Assistant_juridique_v1_cr27b_assistantJuridique.agent&parent=/sites/outils-prospectives/Documents%20partages/Copilot%20Studio%20Agents",
     demoVideoUrl: "",
     status: "active",
     tags: ["Réglementation", "Droit", "Marchés publics"]
@@ -28,7 +28,7 @@ const AGENTS_DATA = [
     icon: "shield",
     shortDesc: "Accédez aux procédures qualité, sécurité et environnement, et gérez vos conformités.",
     longDesc: "L'Assistant QSE centralise l'accès à toutes les procédures et documentations qualité, sécurité et environnement. Il vous guide dans la mise en conformité, le suivi des audits et la gestion des non-conformités.",
-    embedUrl: "",
+    embedUrl: "https://adminevariste.sharepoint.com/sites/outils-prospectives/Documents%20partages/Copilot%20Studio%20Agents?id=/sites/outils-prospectives/Documents%20partages/Copilot%20Studio%20Agents/Assistant%20QSE_cr27b_assistantQse.agent&parent=/sites/outils-prospectives/Documents%20partages/Copilot%20Studio%20Agents",
     demoVideoUrl: "",
     status: "active",
     tags: ["Qualité", "Sécurité", "Environnement"]
@@ -41,7 +41,7 @@ const AGENTS_DATA = [
     icon: "megaphone",
     shortDesc: "Informations et actualités de la Fédération Nationale des Travaux Publics.",
     longDesc: "Le Chatbot FNTP vous donne accès aux dernières actualités, publications et ressources de la Fédération Nationale des Travaux Publics. Restez informé des évolutions du secteur, des événements à venir et des positions de la fédération.",
-    embedUrl: "",
+    embedUrl: "https://adminevariste.sharepoint.com/sites/outils-prospectives/Documents%20partages/Copilot%20Studio%20Agents?id=/sites/outils-prospectives/Documents%20partages/Copilot%20Studio%20Agents/Chatbot%20IP%20FNTP_cr27b_chatbotIpFntp.agent&parent=/sites/outils-prospectives/Documents%20partages/Copilot%20Studio%20Agents",
     demoVideoUrl: "",
     status: "active",
     tags: ["Actualités", "FNTP", "Secteur TP"]
@@ -54,7 +54,7 @@ const AGENTS_DATA = [
     icon: "hardhat",
     shortDesc: "Suivi de chantier, planification et gestion des opérations terrain.",
     longDesc: "L'Assistant Travaux est votre compagnon pour la gestion quotidienne des chantiers. Il vous aide à planifier les interventions, suivre l'avancement des travaux, gérer les ressources et résoudre les problèmes opérationnels.",
-    embedUrl: "",
+    embedUrl: "https://adminevariste.sharepoint.com/sites/outils-prospectives/Documents%20partages/Copilot%20Studio%20Agents?id=/sites/outils-prospectives/Documents%20partages/Copilot%20Studio%20Agents/Assistant%20Travaux_copilots_header_a6e65.agent&parent=/sites/outils-prospectives/Documents%20partages/Copilot%20Studio%20Agents",
     demoVideoUrl: "",
     status: "active",
     tags: ["Chantier", "Planification", "Suivi"]
@@ -67,7 +67,7 @@ const AGENTS_DATA = [
     icon: "users",
     shortDesc: "Congés, paie, formation : toutes vos questions RH en un clic.",
     longDesc: "L'Assistant RH répond à toutes vos questions relatives aux ressources humaines : gestion des congés et absences, informations sur la paie, catalogue de formations, procédures d'embauche, conventions collectives et bien plus.",
-    embedUrl: "",
+    embedUrl: "https://adminevariste.sharepoint.com/sites/outils-prospectives/Documents%20partages/Copilot%20Studio%20Agents?id=/sites/outils-prospectives/Documents%20partages/Copilot%20Studio%20Agents/Assistant%20RH_cr27b_assistantRhnOISmd.agent&parent=/sites/outils-prospectives/Documents%20partages/Copilot%20Studio%20Agents",
     demoVideoUrl: "",
     status: "active",
     tags: ["Congés", "Paie", "Formation"]
@@ -80,7 +80,7 @@ const AGENTS_DATA = [
     icon: "sparkles",
     shortDesc: "Veille technologique et tendances IA pour anticiper les évolutions du secteur.",
     longDesc: "PulseIA est votre radar d'innovation. Il surveille les dernières avancées en intelligence artificielle et technologies émergentes pertinentes pour le secteur des travaux publics, et vous propose des synthèses et recommandations.",
-    embedUrl: "",
+    embedUrl: "https://m365.cloud.microsoft/chat/?titleId=T_576309b6-76f2-795c-8462-3d6d4852b16d&source=embedded-builder",
     demoVideoUrl: "",
     status: "active",
     tags: ["Veille", "Tendances", "Technologies"]
@@ -93,7 +93,7 @@ const AGENTS_DATA = [
     icon: "chart",
     shortDesc: "Surveillance en temps réel des indicateurs clés de vos projets.",
     longDesc: "TP_Monitor vous offre une vue d'ensemble en temps réel de vos indicateurs de performance projet. Tableaux de bord, alertes automatiques et analyses de tendances pour une prise de décision éclairée.",
-    embedUrl: "",
+    embedUrl: "https://m365.cloud.microsoft/chat/?titleId=T_f70617f4-31e3-6fd9-7cfe-96f0eef5c3f9&source=embedded-builder",
     demoVideoUrl: "",
     status: "beta",
     tags: ["KPI", "Tableaux de bord", "Alertes"]
@@ -131,7 +131,7 @@ const AGENTS_DATA = [
     color: "blue",
     icon: "gavel",
     shortDesc: "Assistant juridique spécialisé droit des marchés publics et travaux.",
-    longDesc: "TP_JuriTravaux est spécialisé dans le droit des marchés publics de travaux. Il vous assiste dans la rédaction de mémoires, l'analyse de CCAP/CCTP, la gestion des réclamations et la compréhension des clauses contractuelles.",
+    longDesc: "TP_JuriTravaux is spécialisé dans le droit des marchés publics de travaux. Il vous assiste dans la rédaction de mémoires, l'analyse de CCAP/CCTP, la gestion des réclamations et la compréhension des clauses contractuelles.",
     embedUrl: "",
     demoVideoUrl: "",
     status: "active",
@@ -162,6 +162,32 @@ const AGENTS_DATA = [
     demoVideoUrl: "",
     status: "active",
     tags: ["Terrain", "Contrôles", "Check-lists"]
+  },
+  {
+    id: "analyse-dce",
+    name: "AnalyseDCE",
+    category: "Appels d'offres",
+    color: "orange",
+    icon: "document",
+    shortDesc: "Analyse automatique et synthèse des Dossiers de Consultation des Entreprises.",
+    longDesc: "L'agent AnalyseDCE vous permet d'analyser rapidement les pièces de marché (RC, CCAP, CCTP) d'un Dossier de Consultation des Entreprises. Il extrait les points clés, les contraintes, les pièces à fournir et génère une synthèse pour faciliter votre prise de décision.",
+    embedUrl: "https://m365.cloud.microsoft/chat/?titleId=T_52dfb6a5-a87c-ac1d-0e5c-5cd8eae9aaf5&source=embedded-builder",
+    demoVideoUrl: "",
+    status: "active",
+    tags: ["DCE", "Appels d'offres", "CCTP", "CCAP"]
+  },
+  {
+    id: "agent-ia",
+    name: "Agent IA",
+    category: "Innovation",
+    color: "green",
+    icon: "brain",
+    shortDesc: "Assistant IA polyvalent pour vous accompagner au quotidien.",
+    longDesc: "L'Agent IA est un assistant virtuel polyvalent conçu pour répondre à vos questions, synthétiser des documents, rédiger des contenus et vous assister dans vos tâches quotidiennes grâce aux technologies génératives.",
+    embedUrl: "https://adminevariste.sharepoint.com/sites/outils-prospectives/Documents%20partages/Copilot%20Studio%20Agents?id=/sites/outils-prospectives/Documents%20partages/Copilot%20Studio%20Agents/Agent%20IA_copilots_header_9c81b.agent&parent=/sites/outils-prospectives/Documents%20partages/Copilot%20Studio%20Agents",
+    demoVideoUrl: "",
+    status: "active",
+    tags: ["IA", "Génératif", "Productivité"]
   }
 ];
 
@@ -178,14 +204,14 @@ const SHAREPOINT_LINKS = [
     id: "outils-prospectives",
     name: "Outils Prospectives",
     description: "Outils de prospection et développement commercial",
-    url: "#",
+    url: "https://adminevariste.sharepoint.com/sites/outils-prospectives/",
     icon: "compass"
   },
   {
     id: "agents-ia",
     name: "Agents IA",
     description: "Plateforme des agents IA et documentation",
-    url: "#",
+    url: "https://adminevariste.sharepoint.com/sites/outils-prospectives/Documents%20partages/Copilot%20Studio%20Agents",
     icon: "bot"
   },
   {
@@ -257,5 +283,6 @@ const CATEGORY_COLORS = {
   "Travaux": "blue",
   "Innovation": "green",
   "Monitoring": "orange",
-  "Communication": "blue"
+  "Communication": "blue",
+  "Appels d'offres": "orange"
 };
