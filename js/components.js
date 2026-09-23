@@ -173,15 +173,47 @@ function createNewsContent() {
 }
 
 /* ---- Create Modal HTML ---- */
+function isExternalUrl(url) {
+  if (!url) return false;
+  return url.includes("sharepoint.com") || url.includes("m365.cloud.microsoft");
+}
+
 function createAgentModal(agent) {
-  const hasEmbed = agent && agent.embedUrl;
-  const body = hasEmbed
-    ? `<iframe src="${agent.embedUrl}" title="Chatbot ${agent.name}" loading="lazy"></iframe>`
-    : `<div class="modal__placeholder">
+  let body = "";
+  if (agent && agent.embedUrl) {
+    if (isExternalUrl(agent.embedUrl)) {
+      const isM365 = agent.embedUrl.includes("m365.cloud.microsoft");
+      const platformName = isM365 ? "Microsoft 365 Copilot" : "SharePoint EVARISTE";
+      const iconType = isM365 ? "copilot" : "externalLink";
+      const btnText = isM365 ? "Lancer l'agent dans Microsoft 365" : "Ouvrir l'agent sur SharePoint";
+
+      body = `
+        <div class="modal__launcher">
+          <div class="modal__launcher-icon ${agent.color}">
+            ${getIcon(agent.icon)}
+          </div>
+          <h3 class="modal__launcher-title">${agent.name}</h3>
+          <span class="agent-card__category ${agent.color}" style="margin-bottom: 12px; display: inline-block;">${agent.category}</span>
+          <p class="modal__launcher-desc">${agent.longDesc || agent.shortDesc}</p>
+          <div class="modal__launcher-badge">
+            <span class="hero__badge-dot"></span>
+            Hébergé sur ${platformName}
+          </div>
+          <a href="${agent.embedUrl}" target="_blank" rel="noopener noreferrer" class="btn btn--primary" style="margin-top: 24px; padding: 12px 28px; font-size: 1rem; text-decoration: none;">
+            ${getIcon(iconType)} ${btnText}
+          </a>
+        </div>
+      `;
+    } else {
+      body = `<iframe src="${agent.embedUrl}" title="Chatbot ${agent.name}" loading="lazy"></iframe>`;
+    }
+  } else {
+    body = `<div class="modal__placeholder">
         <div class="modal__placeholder-icon">🤖</div>
         <div class="modal__placeholder-text">L'URL d'intégration de ${agent ? agent.name : "l'agent"} n'est pas encore configurée.</div>
-        <div class="modal__placeholder-hint">Ajoutez l'URL iframe dans le fichier agents-data.js</div>
+        <div class="modal__placeholder-hint">Ajoutez l'URL dans le fichier agents-data.js</div>
       </div>`;
+  }
 
   return `
     <div class="modal">

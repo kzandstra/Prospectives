@@ -113,16 +113,16 @@ const AGENTS_DATA = [
   },
   {
     id: "ao-radar",
-    name: "AO_Radar",
+    name: "AO_Radar / AnalyseDCE",
     category: "Monitoring",
     color: "orange",
     icon: "radar",
-    shortDesc: "Détection et analyse automatique des appels d'offres pertinents.",
-    longDesc: "AO_Radar scanne en continu les plateformes d'appels d'offres pour détecter les opportunités correspondant à vos critères. Analyse automatique, scoring de pertinence et alertes en temps réel.",
-    embedUrl: "",
+    shortDesc: "Détection, analyse automatique DCE et suivi des appels d'offres pertinents.",
+    longDesc: "AO_Radar / AnalyseDCE scanne en continu les plateformes d'appels d'offres et analyse les dossiers de consultation (DCE) pour détecter les opportunités correspondant à vos critères. Analyse automatique, scoring de pertinence et alertes en temps réel.",
+    embedUrl: "https://m365.cloud.microsoft/chat/?titleId=T_52dfb6a5-a87c-ac1d-0e5c-5cd8eae9aaf5&source=embedded-builder",
     demoVideoUrl: "",
     status: "active",
-    tags: ["Appels d'offres", "Veille", "Scoring"]
+    tags: ["Appels d'offres", "DCE", "Veille", "Scoring"]
   },
   {
     id: "tp-juritravaux",
@@ -131,7 +131,7 @@ const AGENTS_DATA = [
     color: "blue",
     icon: "gavel",
     shortDesc: "Assistant juridique spécialisé droit des marchés publics et travaux.",
-    longDesc: "TP_JuriTravaux is spécialisé dans le droit des marchés publics de travaux. Il vous assiste dans la rédaction de mémoires, l'analyse de CCAP/CCTP, la gestion des réclamations et la compréhension des clauses contractuelles.",
+    longDesc: "TP_JuriTravaux est spécialisé dans le droit des marchés publics de travaux. Il vous assiste dans la rédaction de mémoires, l'analyse de CCAP/CCTP, la gestion des réclamations et la compréhension des clauses contractuelles.",
     embedUrl: "",
     demoVideoUrl: "",
     status: "active",
@@ -145,7 +145,7 @@ const AGENTS_DATA = [
     icon: "document",
     shortDesc: "Recherche documentaire juridique et aide à la rédaction de documents légaux.",
     longDesc: "L'Agent juridique vous accompagne dans la recherche documentaire juridique et la rédaction de documents légaux. Il peut analyser des textes de loi, préparer des synthèses et vous aider à rédiger des courriers et notes juridiques.",
-    embedUrl: "",
+    embedUrl: "https://adminevariste.sharepoint.com/sites/outils-prospectives/Documents%20partages/Copilot%20Studio%20Agents?id=/sites/outils-prospectives/Documents%20partages/Copilot%20Studio%20Agents/Agent%20IA_copilots_header_9c81b.agent&parent=/sites/outils-prospectives/Documents%20partages/Copilot%20Studio%20Agents",
     demoVideoUrl: "",
     status: "active",
     tags: ["Documentation", "Rédaction", "Analyse"]
@@ -162,32 +162,6 @@ const AGENTS_DATA = [
     demoVideoUrl: "",
     status: "active",
     tags: ["Terrain", "Contrôles", "Check-lists"]
-  },
-  {
-    id: "analyse-dce",
-    name: "AnalyseDCE",
-    category: "Appels d'offres",
-    color: "orange",
-    icon: "document",
-    shortDesc: "Analyse automatique et synthèse des Dossiers de Consultation des Entreprises.",
-    longDesc: "L'agent AnalyseDCE vous permet d'analyser rapidement les pièces de marché (RC, CCAP, CCTP) d'un Dossier de Consultation des Entreprises. Il extrait les points clés, les contraintes, les pièces à fournir et génère une synthèse pour faciliter votre prise de décision.",
-    embedUrl: "https://m365.cloud.microsoft/chat/?titleId=T_52dfb6a5-a87c-ac1d-0e5c-5cd8eae9aaf5&source=embedded-builder",
-    demoVideoUrl: "",
-    status: "active",
-    tags: ["DCE", "Appels d'offres", "CCTP", "CCAP"]
-  },
-  {
-    id: "agent-ia",
-    name: "Agent IA",
-    category: "Innovation",
-    color: "green",
-    icon: "brain",
-    shortDesc: "Assistant IA polyvalent pour vous accompagner au quotidien.",
-    longDesc: "L'Agent IA est un assistant virtuel polyvalent conçu pour répondre à vos questions, synthétiser des documents, rédiger des contenus et vous assister dans vos tâches quotidiennes grâce aux technologies génératives.",
-    embedUrl: "https://adminevariste.sharepoint.com/sites/outils-prospectives/Documents%20partages/Copilot%20Studio%20Agents?id=/sites/outils-prospectives/Documents%20partages/Copilot%20Studio%20Agents/Agent%20IA_copilots_header_9c81b.agent&parent=/sites/outils-prospectives/Documents%20partages/Copilot%20Studio%20Agents",
-    demoVideoUrl: "",
-    status: "active",
-    tags: ["IA", "Génératif", "Productivité"]
   }
 ];
 
@@ -204,14 +178,14 @@ const SHAREPOINT_LINKS = [
     id: "outils-prospectives",
     name: "Outils Prospectives",
     description: "Outils de prospection et développement commercial",
-    url: "https://adminevariste.sharepoint.com/sites/outils-prospectives/",
+    url: "#",
     icon: "compass"
   },
   {
     id: "agents-ia",
     name: "Agents IA",
     description: "Plateforme des agents IA et documentation",
-    url: "https://adminevariste.sharepoint.com/sites/outils-prospectives/Documents%20partages/Copilot%20Studio%20Agents",
+    url: "#",
     icon: "bot"
   },
   {
@@ -283,6 +257,5 @@ const CATEGORY_COLORS = {
   "Travaux": "blue",
   "Innovation": "green",
   "Monitoring": "orange",
-  "Communication": "blue",
-  "Appels d'offres": "orange"
+  "Communication": "blue"
 };

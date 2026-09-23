@@ -179,7 +179,27 @@
       
       let chatContent = '';
       if (agent.embedUrl) {
-        chatContent = `<iframe src="${agent.embedUrl}" class="chatbot-iframe" title="Chatbot ${agent.name}"></iframe>`;
+        if (agent.embedUrl.includes("sharepoint.com") || agent.embedUrl.includes("m365.cloud.microsoft")) {
+          const isM365 = agent.embedUrl.includes("m365.cloud.microsoft");
+          const platformName = isM365 ? "Microsoft 365 Copilot" : "SharePoint EVARISTE";
+          const btnText = isM365 ? "Lancer l'agent dans Microsoft 365" : "Ouvrir l'agent sur SharePoint";
+          chatContent = `
+            <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; padding: 3rem 2rem; text-align: center; background: var(--bg-secondary);">
+              <div class="detail-icon ${agent.color}" style="background: var(--${agent.color}-bg); color: var(--${agent.color}); margin-bottom: 1.5rem; width: 80px; height: 80px;">
+                ${getIcon(agent.icon)}
+              </div>
+              <h2 style="font-size: 1.8rem; margin-bottom: 0.5rem; font-weight: 700;">${agent.name}</h2>
+              <p style="color: var(--text-secondary); max-width: 480px; margin-bottom: 1.5rem; line-height: 1.6;">
+                Cet agent est disponible directement sur <strong>${platformName}</strong>. Cliquez ci-dessous pour ouvrir votre session d'interaction.
+              </p>
+              <a href="${agent.embedUrl}" target="_blank" rel="noopener noreferrer" class="btn btn--primary" style="padding: 0.8rem 2rem; font-size: 1rem; text-decoration: none;">
+                ${getIcon(isM365 ? "copilot" : "externalLink")} ${btnText}
+              </a>
+            </div>
+          `;
+        } else {
+          chatContent = `<iframe src="${agent.embedUrl}" class="chatbot-iframe" title="Chatbot ${agent.name}"></iframe>`;
+        }
       } else {
         chatContent = `
           <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; color: var(--text-muted); padding: 2rem; text-align: center;">
