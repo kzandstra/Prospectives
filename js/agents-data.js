@@ -36,15 +36,28 @@ const AGENTS_DATA = [
   {
     id: "chatbot-fntp",
     name: "Chatbot FNTP",
-    category: "Communication",
+    category: "Études",
     color: "blue",
     icon: "megaphone",
-    shortDesc: "Informations et actualités de la Fédération Nationale des Travaux Publics.",
-    longDesc: "Le Chatbot FNTP vous donne accès aux dernières actualités, publications et ressources de la Fédération Nationale des Travaux Publics. Restez informé des évolutions du secteur, des événements à venir et des positions de la fédération.",
+    shortDesc: "Informations, documentation et actualités de la Fédération Nationale des Travaux Publics.",
+    longDesc: "Le Chatbot FNTP vous donne accès aux dernières actualités, publications et ressources documentaires de la Fédération Nationale des Travaux Publics. Restez informé des évolutions du secteur, des événements à venir et des positions de la fédération.",
     embedUrl: "https://adminevariste.sharepoint.com/sites/outils-prospectives/Documents%20partages/Copilot%20Studio%20Agents?id=/sites/outils-prospectives/Documents%20partages/Copilot%20Studio%20Agents/Chatbot%20IP%20FNTP_cr27b_chatbotIpFntp.agent&parent=/sites/outils-prospectives/Documents%20partages/Copilot%20Studio%20Agents",
     demoVideoUrl: "",
     status: "active",
-    tags: ["Actualités", "FNTP", "Secteur TP"]
+    tags: ["Études", "Actualités", "FNTP", "Secteur TP"]
+  },
+  {
+    id: "analyse-dce",
+    name: "AnalyseDCE",
+    category: "Études",
+    color: "blue",
+    icon: "document",
+    shortDesc: "Analyse automatique des dossiers de consultation des entreprises (DCE).",
+    longDesc: "AnalyseDCE exploite Copilot Agent Builder pour analyser en détail vos dossiers de consultation d'entreprises (DCE), extraire les exigences clés et simplifier la préparation des réponses aux appels d'offres.",
+    embedUrl: "https://m365.cloud.microsoft/chat/?titleId=T_52dfb6a5-a87c-ac1d-0e5c-5cd8eae9aaf5&source=embedded-builder",
+    demoVideoUrl: "",
+    status: "active",
+    tags: ["Études", "DCE", "Appels d'offres", "Analyse"]
   },
   {
     id: "assistant-travaux",
@@ -75,15 +88,15 @@ const AGENTS_DATA = [
   {
     id: "pulseia",
     name: "PulseIA",
-    category: "Innovation",
-    color: "green",
+    category: "Monitoring",
+    color: "orange",
     icon: "sparkles",
-    shortDesc: "Veille technologique et tendances IA pour anticiper les évolutions du secteur.",
-    longDesc: "PulseIA est votre radar d'innovation. Il surveille les dernières avancées en intelligence artificielle et technologies émergentes pertinentes pour le secteur des travaux publics, et vous propose des synthèses et recommandations.",
+    shortDesc: "Veille technologique et actualités du secteur pour anticiper les évolutions.",
+    longDesc: "PulseIA est votre radar de veille sectorielle et technologique. Il surveille l'actualité industrielle et les dernières avancées en intelligence artificielle pour vous proposer des synthèses et alertes d'actualité.",
     embedUrl: "https://m365.cloud.microsoft/chat/?titleId=T_576309b6-76f2-795c-8462-3d6d4852b16d&source=embedded-builder",
     demoVideoUrl: "",
     status: "active",
-    tags: ["Veille", "Tendances", "Technologies"]
+    tags: ["Veille", "Actualités", "Monitoring", "Technologies"]
   },
   {
     id: "tp-monitor",
@@ -91,38 +104,38 @@ const AGENTS_DATA = [
     category: "Monitoring",
     color: "orange",
     icon: "chart",
-    shortDesc: "Surveillance en temps réel des indicateurs clés de vos projets.",
-    longDesc: "TP_Monitor vous offre une vue d'ensemble en temps réel de vos indicateurs de performance projet. Tableaux de bord, alertes automatiques et analyses de tendances pour une prise de décision éclairée.",
+    shortDesc: "Surveillance en temps réel des indicateurs et actualités clés de vos projets.",
+    longDesc: "TP_Monitor vous offre une vue d'ensemble en temps réel de vos indicateurs de performance projet et des alertes d'actualité métier. Tableaux de bord, alertes automatiques et analyses de tendances.",
     embedUrl: "https://m365.cloud.microsoft/chat/?titleId=T_f70617f4-31e3-6fd9-7cfe-96f0eef5c3f9&source=embedded-builder",
     demoVideoUrl: "",
     status: "beta",
-    tags: ["KPI", "Tableaux de bord", "Alertes"]
+    tags: ["KPI", "Monitoring", "Tableaux de bord", "Alertes"]
   },
   {
     id: "clinovia",
     name: "ClinovIA",
-    category: "Innovation",
-    color: "green",
+    category: "Monitoring",
+    color: "orange",
     icon: "brain",
-    shortDesc: "Analyse prédictive et optimisation des processus métier par l'IA.",
-    longDesc: "ClinovIA exploite l'intelligence artificielle pour analyser vos données métier, identifier des patterns et proposer des optimisations. Prédictions, recommandations et automatisations au service de votre efficacité.",
+    shortDesc: "Veille et analyse prédictive des tendances métier par l'IA.",
+    longDesc: "ClinovIA exploite l'intelligence artificielle pour surveiller les évolutions sectorielles, analyser vos données métier et proposer des optimisations prédictives.",
     embedUrl: "",
     demoVideoUrl: "",
     status: "beta",
-    tags: ["Prédictif", "Optimisation", "Data"]
+    tags: ["Monitoring", "Veille", "Prédictif", "Data"]
   },
   {
     id: "ao-radar",
-    name: "AO_Radar / AnalyseDCE",
+    name: "AO_Radar",
     category: "Monitoring",
     color: "orange",
     icon: "radar",
-    shortDesc: "Détection, analyse automatique DCE et suivi des appels d'offres pertinents.",
-    longDesc: "AO_Radar / AnalyseDCE scanne en continu les plateformes d'appels d'offres et analyse les dossiers de consultation (DCE) pour détecter les opportunités correspondant à vos critères. Analyse automatique, scoring de pertinence et alertes en temps réel.",
-    embedUrl: "https://m365.cloud.microsoft/chat/?titleId=T_52dfb6a5-a87c-ac1d-0e5c-5cd8eae9aaf5&source=embedded-builder",
+    shortDesc: "Détection, veille et surveillance en temps réel des appels d'offres pertinents.",
+    longDesc: "AO_Radar scanne en continu les plateformes d'appels d'offres pour détecter les opportunités correspondant à vos critères. Monitoring automatisé, scoring de pertinence et alertes en temps réel.",
+    embedUrl: "",
     demoVideoUrl: "",
     status: "active",
-    tags: ["Appels d'offres", "DCE", "Veille", "Scoring"]
+    tags: ["Monitoring", "Appels d'offres", "Veille", "Scoring"]
   },
   {
     id: "tp-juritravaux",
@@ -255,7 +268,6 @@ const CATEGORY_COLORS = {
   "QSE": "green",
   "Ressources Humaines": "orange",
   "Travaux": "blue",
-  "Innovation": "green",
-  "Monitoring": "orange",
-  "Communication": "blue"
+  "Études": "blue",
+  "Monitoring": "orange"
 };
