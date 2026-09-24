@@ -1,48 +1,62 @@
 # Portail des Agents IA - EVARISTE
 
-Ce projet est une landing page moderne et interactive conçue pour centraliser et présenter le catalogue des **agents d'intelligence artificielle** de l'entreprise **EVARISTE**, développés à l'aide de **Microsoft Copilot Studio**.
+Ce projet est une landing page moderne et interactive conçue pour centraliser et présenter le catalogue des **agents d'intelligence artificielle** de l'entreprise **EVARISTE**, développés à l'aide de **Microsoft Copilot Studio** et **Microsoft 365 Copilot**.
 
-Le portail offre une interface utilisateur haut de gamme avec un design sombre (*dark mode*), des effets de flou de texture (*glassmorphism*), des micro-animations fluides, et permet aux collaborateurs d'explorer, de tester et d'accéder aux détails de chaque agent IA disponible.
+Le portail offre une interface utilisateur haut de gamme avec un design sombre (*dark mode*), des effets de flou de texture (*glassmorphism*), des micro-animations fluides, et permet aux collaborateurs d'explorer, de lancer et d'accéder aux détails de chaque agent IA disponible.
 
 ---
 
 ## 🚀 Fonctionnalités clés
 
 1. **Catalogue Interactif des Agents** : Présentation sous forme de cartes élégantes avec icônes adaptées, catégories de couleur, étiquettes de statut (Actif, Bêta, Bientôt disponible) et tags descriptifs.
-2. **Recherche et Filtrage en Temps Réel** : Une barre de recherche dynamique par mot-clé (nom, description, tags, catégorie) combinée à des filtres par catégorie d'agent pour trouver instantanément l'assistant souhaité.
-3. **Compteurs Statistiques Animés** : Animation dynamique au chargement comptabilisant le nombre d'agents total, le nombre de catégories et le nombre d'agents actifs.
-4. **Intégration d'iframe Chat / Modal** :
-   - Un bouton **"Essayer"** ouvre instantanément une boîte de dialogue modale contenant le chatbot actif intégré via iframe.
-   - Un bouton **"Détails"** redirige vers une page dédiée présentant l'agent en grand écran avec des guides d'utilisation.
+2. **Recherche et Filtrage en Temps Réel** : Une barre de recherche dynamique par mot-clé (nom, description, tags, catégorie) combinée à des filtres par catégorie d'agent (`Juridique`, `QSE`, `Ressources Humaines`, `Travaux`, `Études`, `Monitoring`).
+3. **Cartes de Lancement Microsoft 365 & Copilot Studio** :
+   - Détection automatique du type de lien pour éviter les blocages de sécurité navigateurs (`X-Frame-Options`).
+   - **Agents Microsoft 365 & SharePoint** : Génération d'une carte de lancement dynamique interactive (*"Lancer dans Microsoft 365"* / *"Ouvrir sur SharePoint"*).
+   - **Canaux Web Copilot Studio** : Affichage d'une fenêtre modale tchat intégrée via `<iframe>`.
+4. **Compteurs Statistiques Animés** : Animation dynamique au chargement comptabilisant le nombre d'agents total, le nombre de catégories et le nombre d'agents actifs.
 5. **Ressources SharePoint de l'entreprise** : Raccourcis visuels vers les portails et sites SharePoint internes d'EVARISTE.
 6. **Vidéos de Démo** : Galerie de démonstrations vidéo pour voir les agents en action (ouverture dans une modale vidéo).
 7. **Fil d'actualité IA** : Section dédiée affichant les dernières actualités IA (intégrable avec une liste SharePoint).
 
 ---
 
+## 📂 Organisation du Catalogue des Agents
+
+| Catégorie | Couleur | Agents inclus | Description & Focus |
+| :--- | :--- | :--- | :--- |
+| **Juridique** | Bleu | Assistant Juridique, TP_JuriTravaux, Agent juridique | Réglementation, marchés publics, droit du travail et réclamations. |
+| **QSE** | Vert | Assistant QSE, TP_CompagnonQSE | Procédures qualité, sécurité, environnement et contrôles terrain. |
+| **Ressources Humaines** | Orange | Assistant RH | Congés, paie, formations et conventions collectives. |
+| **Travaux** | Bleu | Assistant Travaux | Suivi de chantier, planification et gestion des opérations. |
+| **Études** | Bleu | Chatbot FNTP, AnalyseDCE | Documentation FNTP et analyse automatique des dossiers de consultation (DCE). |
+| **Monitoring** | Orange | AO_Radar, PulseIA, ClinovIA, TP_Monitor | Surveillance des appels d'offres, veille technologique, actualités et KPI projet. |
+
+---
+
 ## 🛠️ Architecture du projet
 
-Le projet est structuré de façon modulaire et utilise uniquement des technologies web standards (sans framework complexe ni dépendance lourde) afin de garantir des performances optimales et une maintenance simplifiée.
+Le projet est structuré de façon modulaire et utilise uniquement des technologies web standards (Vanilla HTML, CSS, JavaScript ES6+) afin de garantir des performances optimales et une maintenance simplifiée.
 
 *   [index.html](index.html) : Page d'accueil principale et catalogue du portail.
 *   **[css/](css/)** : Styles CSS modulaires.
     *   [css/variables.css](css/variables.css) : Design system tokens (couleurs, thèmes, espacements, typographies).
-    *   [css/base.css](css/base.css) : Styles globaux de réinitialisation et configuration de base des éléments HTML.
-    *   [css/animations.css](css/animations.css) : Déclarations des animations d'entrée au défilement et transitions.
-    *   [css/components.css](css/components.css) : Styles des composants autonomes (cartes, boutons, modales, recherche, filtres, pied de page).
-    *   [css/layout.css](css/layout.css) : Structure générale de mise en page (grilles, sections, conteneurs réutilisables).
-*   **[js/](js/)** : Logique JavaScript dynamique (Vanilla JS, ES6+).
-    *   [js/agents-data.js](js/agents-data.js) : Base de données centrale de l'application (configuration des agents, liens SharePoint, vidéos).
-    *   [js/components.js](js/components.js) : Générateurs de composants HTML dynamiques et bibliothèque d'icônes SVG intégrées.
-    *   [js/app.js](js/app.js) : Initialisation globale du site, logique de recherche, filtres de catégories, compteurs animés et événements.
-*   **[pages/](pages/)** : Pages additionnelles de l'application.
-    *   [pages/agent-detail.html](pages/agent-detail.html) : Fiche de présentation détaillée de l'agent avec chat en grand écran intégré via iframe.
+    *   [css/base.css](css/base.css) : Styles globaux de réinitialisation et configuration de base.
+    *   [css/animations.css](css/animations.css) : Animations d'entrée au défilement et transitions micro-interactives.
+    *   [css/components.css](css/components.css) : Styles des cartes, boutons, cartes de lancement M365, modales et recherche.
+    *   [css/layout.css](css/layout.css) : Structure générale de mise en page (grilles, sections, conteneurs).
+*   **[js/](js/)** : Logique JavaScript dynamique.
+    *   [js/agents-data.js](js/agents-data.js) : Base de données centrale (configuration des 13 agents, liens SharePoint et vidéos).
+    *   [js/components.js](js/components.js) : Générateurs de cartes, modales interactives et bibliothèque d'icônes SVG.
+    *   [js/app.js](js/app.js) : Initialisation globale, moteur de recherche, filtres et événements.
+*   **[pages/](pages/)** :
+    *   [pages/agent-detail.html](pages/agent-detail.html) : Fiche de présentation détaillée de chaque agent.
 
 ---
 
 ## ⚙️ Personnalisation & Configuration
 
-Toutes les données du portail sont configurées dans un unique fichier central : `js/agents-data.js`. Pour modifier le contenu, il n'est pas nécessaire de toucher au code HTML ou CSS.
+Toutes les données du portail sont configurées dans un unique fichier central : `js/agents-data.js`.
 
 ### 1. Ajouter ou modifier un agent IA
 
@@ -51,65 +65,37 @@ Ajoutez simplement un objet dans le tableau `AGENTS_DATA` de `js/agents-data.js`
 {
   id: "mon-nouvel-agent",                 // Identifiant unique
   name: "Mon Nouvel Agent",               // Nom de l'agent
-  category: "Nom Catégorie",              // Catégorie (sert aussi pour le filtrage)
-  color: "blue",                          // Couleur dominante (blue, green, orange)
-  icon: "brain",                          // Icône SVG définie dans components.js
+  category: "Études",                     // Catégorie (Juridique, QSE, RH, Travaux, Études, Monitoring)
+  color: "blue",                          // Couleur (blue, green, orange)
+  icon: "brain",                          // Icône SVG (scales, shield, hardhat, users, sparkles, chart, radar, etc.)
   shortDesc: "Courte description...",     // Affichée sur la carte du catalogue
   longDesc: "Description détaillée...",   // Affichée sur la page de détail
-  embedUrl: "https://copilot-studio...",  // URL d'intégration iframe Microsoft Copilot Studio
+  embedUrl: "https://m365.cloud.microsoft/chat/?titleId=...",  // URL M365 Copilot Chat, SharePoint ou Copilot Studio iframe
   demoVideoUrl: "",                       // Optionnel : lien vers une vidéo démo
   status: "active",                       // Statut : 'active', 'beta' ou 'coming-soon'
-  tags: ["Tag1", "Tag2"]                  // Tags pour le moteur de recherche
+  tags: ["Études", "Analyse"]             // Tags pour le moteur de recherche
 }
-```
-
-### 2. Ajouter un lien SharePoint
-
-Ajoutez un objet dans le tableau `SHAREPOINT_LINKS` de `js/agents-data.js` :
-```javascript
-{
-  id: "direction-rh",
-  name: "Direction RH",
-  description: "Direction des Ressources Humaines",
-  url: "https://evariste.sharepoint.com/...",
-  icon: "users"
-}
-```
-
-### 3. Modifier la configuration générale du site
-
-Ajustez l'objet `SITE_CONFIG` pour modifier les textes ou intégrer un flux d'actualités externe :
-```javascript
-const SITE_CONFIG = {
-  companyName: "EVARISTE",
-  pageTitle: "Agents IA — Copilot Studio",
-  heroTitle: "Vos Agents IA",
-  heroSubtitle: "Découvrez et accédez...",
-  newsIframeUrl: "https://...",           // Ajoutez l'URL de votre liste SharePoint d'actualités
-  newsPlaceholderText: "..."
-};
 ```
 
 ---
 
-## 💻 Comment exécuter le projet
+## 💻 Exécution Locale & Déploiement
 
-Puisqu'il s'agit d'un site web statique utilisant du Vanilla HTML/CSS/JS, aucun build ou compilation n'est nécessaire.
+### Option 1 : Serveur Web Local (Recommandé)
+Pour exécuter le projet en local sur le port 8080 :
+```bash
+python -m http.server 8080
+```
+Accédez ensuite à [http://localhost:8080](http://localhost:8080).
 
-### Option 1 : Ouverture Locale Directe
-Vous pouvez ouvrir directement le fichier `index.html` dans n'importe quel navigateur web moderne (Chrome, Edge, Firefox, Safari).
-
-### Option 2 : Serveur de Développement Local (Recommandé)
-Pour éviter de potentielles restrictions de sécurité du navigateur (notamment pour l'affichage des iframes ou les cookies de session Copilot Studio), il est préférable d'exécuter un petit serveur web local :
-*   **VS Code** : Utilisez l'extension **Live Server**.
-*   **Node.js** : Exécutez `npx http-server` à la racine du projet.
-*   **Python 3** : Exécutez `python -m http.server 8000` à la racine du projet.
+### Option 2 : GitHub Repository
+Le dépôt officiel du projet est hébergé sur GitHub :
+👉 [https://github.com/kzandstra/Prospectives](https://github.com/kzandstra/Prospectives)
 
 ---
 
-## 🎨 Spécifications Design & Graphiques
+## 🎨 Spécifications Design
 
-Le portail implémente une charte graphique premium respectant les standards de l'expérience utilisateur moderne :
-*   **Palette de couleurs** : Tons sombres profonds (`#0c1426` à `#162040`) contrastant avec des nuances d'accents de couleur pastel (Bleu, Vert et Orange) possédant des reflets luminescents (*glow*).
-*   **Typographie** : Combinaison de **Outfit** (pour les titres élégants et géométriques) et de **Inter** (pour le corps de texte clair et lisible), toutes deux chargées depuis Google Fonts.
-*   **Micro-interactions** : Effets de survol dynamiques avec transitions fluides sur les boutons et cartes (effet d'échelle et translation), gestion automatique des animations au défilement grâce à l'API performante `IntersectionObserver`.
+* **Palette de couleurs** : Sombre profond (`#0c1426` à `#162040`) avec accents luminescents pastel (Bleu, Vert, Orange).
+* **Typographie** : **Outfit** (titres géométriques) et **Inter** (corps de texte) via Google Fonts.
+* **Animations** : Transitions fluides, effets de survol réactifs et détections d'entrée `IntersectionObserver`.
