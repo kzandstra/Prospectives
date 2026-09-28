@@ -16,6 +16,8 @@ const AGENTS_DATA = [
     shortDesc: "Consultez la réglementation et obtenez des réponses juridiques adaptées au secteur des travaux publics.",
     longDesc: "L'Assistant Juridique vous accompagne dans vos recherches réglementaires et juridiques. Il peut répondre à vos questions sur le droit du travail, les marchés publics, la responsabilité civile et pénale, et bien plus encore. Basé sur une base de connaissances actualisée, il fournit des réponses précises et sourcées.",
     embedUrl: "https://adminevariste.sharepoint.com/sites/outils-prospectives/Documents%20partages/Copilot%20Studio%20Agents?id=/sites/outils-prospectives/Documents%20partages/Copilot%20Studio%20Agents/Assistant_juridique_v1_cr27b_assistantJuridique.agent&parent=/sites/outils-prospectives/Documents%20partages/Copilot%20Studio%20Agents",
+    docTechniqueUrl: "https://adminevariste.sharepoint.com/:b:/s/outils-prospectives/IQD74LPujjtaQatpsJhuuouRAVWdd9B1ECFlHPpSzRXSLgQ?e=6yumgA",
+    docTechniqueName: "201_agent_juridique_technique.pdf",
     demoVideoUrl: "",
     status: "active",
     tags: ["Réglementation", "Droit", "Marchés publics"]
@@ -29,6 +31,9 @@ const AGENTS_DATA = [
     shortDesc: "Accédez aux procédures qualité, sécurité et environnement, et gérez vos conformités.",
     longDesc: "L'Assistant QSE centralise l'accès à toutes les procédures et documentations qualité, sécurité et environnement. Il vous guide dans la mise en conformité, le suivi des audits et la gestion des non-conformités.",
     embedUrl: "https://adminevariste.sharepoint.com/sites/outils-prospectives/Documents%20partages/Copilot%20Studio%20Agents?id=/sites/outils-prospectives/Documents%20partages/Copilot%20Studio%20Agents/Assistant%20QSE_cr27b_assistantQse.agent&parent=/sites/outils-prospectives/Documents%20partages/Copilot%20Studio%20Agents",
+    sharepointPageUrl: "https://adminevariste.sharepoint.com/sites/outils-prospectives/SitePages/Assistant-QSE.aspx",
+    docTechniqueUrl: "https://adminevariste.sharepoint.com/:b:/s/outils-prospectives/IQBFu8z8fBF4S5xXSTggfloNAbybaW775RNYa0NHph4VaFo?e=TvOvCj",
+    docTechniqueName: "501_agent_QSE_technique.pdf",
     demoVideoUrl: "",
     status: "active",
     tags: ["Qualité", "Sécurité", "Environnement"]
@@ -42,6 +47,8 @@ const AGENTS_DATA = [
     shortDesc: "Informations, documentation et actualités de la Fédération Nationale des Travaux Publics.",
     longDesc: "Le Chatbot FNTP vous donne accès aux dernières actualités, publications et ressources documentaires de la Fédération Nationale des Travaux Publics. Restez informé des évolutions du secteur, des événements à venir et des positions de la fédération.",
     embedUrl: "https://adminevariste.sharepoint.com/sites/outils-prospectives/Documents%20partages/Copilot%20Studio%20Agents?id=/sites/outils-prospectives/Documents%20partages/Copilot%20Studio%20Agents/Chatbot%20IP%20FNTP_cr27b_chatbotIpFntp.agent&parent=/sites/outils-prospectives/Documents%20partages/Copilot%20Studio%20Agents",
+    docTechniqueUrl: "https://adminevariste.sharepoint.com/:b:/s/outils-prospectives/IQCAc5kUZY8LRItTVCFWzmLFAflRLzztZVEYYXWameFy8dk?e=gugewJ",
+    docTechniqueName: "803_IP_FNTP.pdf",
     demoVideoUrl: "",
     status: "active",
     tags: ["Études", "Actualités", "FNTP", "Secteur TP"]
@@ -55,6 +62,7 @@ const AGENTS_DATA = [
     shortDesc: "Analyse automatique des dossiers de consultation des entreprises (DCE).",
     longDesc: "AnalyseDCE exploite Copilot Agent Builder pour analyser en détail vos dossiers de consultation d'entreprises (DCE), extraire les exigences clés et simplifier la préparation des réponses aux appels d'offres.",
     embedUrl: "https://m365.cloud.microsoft/chat/?titleId=T_52dfb6a5-a87c-ac1d-0e5c-5cd8eae9aaf5&source=embedded-builder",
+    sharepointPageUrl: "https://adminevariste.sharepoint.com/sites/outils-prospectives/SitePages/Analyse-DCE.aspx",
     demoVideoUrl: "",
     status: "active",
     tags: ["Études", "DCE", "Appels d'offres", "Analyse"]
@@ -68,6 +76,7 @@ const AGENTS_DATA = [
     shortDesc: "Suivi de chantier, planification et gestion des opérations terrain.",
     longDesc: "L'Assistant Travaux est votre compagnon pour la gestion quotidienne des chantiers. Il vous aide à planifier les interventions, suivre l'avancement des travaux, gérer les ressources et résoudre les problèmes opérationnels.",
     embedUrl: "https://adminevariste.sharepoint.com/sites/outils-prospectives/Documents%20partages/Copilot%20Studio%20Agents?id=/sites/outils-prospectives/Documents%20partages/Copilot%20Studio%20Agents/Assistant%20Travaux_copilots_header_a6e65.agent&parent=/sites/outils-prospectives/Documents%20partages/Copilot%20Studio%20Agents",
+    sharepointPageUrl: "https://adminevariste.sharepoint.com/sites/outils-prospectives/SitePages/Assistant-Travaux.aspx",
     demoVideoUrl: "",
     status: "active",
     tags: ["Chantier", "Planification", "Suivi"]
@@ -81,6 +90,10 @@ const AGENTS_DATA = [
     shortDesc: "Congés, paie, formation : toutes vos questions RH en un clic.",
     longDesc: "L'Assistant RH répond à toutes vos questions relatives aux ressources humaines : gestion des congés et absences, informations sur la paie, catalogue de formations, procédures d'embauche, conventions collectives et bien plus.",
     embedUrl: "https://adminevariste.sharepoint.com/sites/outils-prospectives/Documents%20partages/Copilot%20Studio%20Agents?id=/sites/outils-prospectives/Documents%20partages/Copilot%20Studio%20Agents/Assistant%20RH_cr27b_assistantRhnOISmd.agent&parent=/sites/outils-prospectives/Documents%20partages/Copilot%20Studio%20Agents",
+    docTechniqueUrl: "https://adminevariste.sharepoint.com/:b:/s/outils-prospectives/IQDmo8NeCQw9Q7JtoiojhSDIAS4NbitF-n3VvMq3QihT4y0?e=Nmeloh",
+    docTechniqueName: "101_agent_RH_technique.pdf",
+    docVeilleSocialeUrl: "https://adminevariste.sharepoint.com/:b:/s/outils-prospectives/IQDg110KdvyTQqfT-Aw6qYdLAUDs51m8PRGoGW30-fxDxvY?e=tivHgx",
+    docVeilleSocialeName: "108_veille_sociale.pdf",
     demoVideoUrl: "",
     status: "active",
     tags: ["Congés", "Paie", "Formation"]
@@ -181,46 +194,70 @@ const AGENTS_DATA = [
 /* ---- Liens vers les sites SharePoint ---- */
 const SHAREPOINT_LINKS = [
   {
-    id: "direction-rh",
-    name: "Direction RH",
-    description: "Direction des Ressources Humaines",
-    url: "#",
-    icon: "users"
+    id: "outils-prospectives-home",
+    name: "Outils Prospectives — Home",
+    description: "Page d'accueil du site SharePoint Outils Prospectives",
+    url: "https://adminevariste.sharepoint.com/sites/outils-prospectives",
+    icon: "compass",
+    badge: "Accueil"
   },
   {
-    id: "outils-prospectives",
-    name: "Outils Prospectives",
-    description: "Outils de prospection et développement commercial",
-    url: "#",
-    icon: "compass"
+    id: "sp-assistant-travaux",
+    name: "Assistant Travaux",
+    description: "Page SharePoint dédiée à l'Assistant Travaux",
+    url: "https://adminevariste.sharepoint.com/sites/outils-prospectives/SitePages/Assistant-Travaux.aspx",
+    icon: "hardhat",
+    badge: "Page SharePoint"
   },
   {
-    id: "agents-ia",
-    name: "Agents IA",
-    description: "Plateforme des agents IA et documentation",
-    url: "#",
-    icon: "bot"
+    id: "sp-analyse-dce",
+    name: "Analyse DCE",
+    description: "Page SharePoint dédiée à l'agent Analyse DCE",
+    url: "https://adminevariste.sharepoint.com/sites/outils-prospectives/SitePages/Analyse-DCE.aspx",
+    icon: "document",
+    badge: "Page SharePoint"
   },
   {
-    id: "etudes-methodes",
-    name: "Études & Méthodes",
-    description: "Bureau d'études et méthodes de construction",
-    url: "#",
-    icon: "blueprint"
+    id: "sp-assistant-qse",
+    name: "Assistant QSE",
+    description: "Page SharePoint dédiée à l'Assistant QSE",
+    url: "https://adminevariste.sharepoint.com/sites/outils-prospectives/SitePages/Assistant-QSE.aspx",
+    icon: "shield",
+    badge: "Page SharePoint",
+    docUrl: "https://adminevariste.sharepoint.com/:b:/s/outils-prospectives/IQBFu8z8fBF4S5xXSTggfloNAbybaW775RNYa0NHph4VaFo?e=TvOvCj",
+    docName: "501_agent_QSE_technique.pdf"
   },
   {
-    id: "gt-ia",
-    name: "GT IA",
-    description: "Groupe de travail Intelligence Artificielle",
-    url: "#",
-    icon: "brain"
+    id: "doc-assistant-rh",
+    name: "Doc Technique — Assistant RH",
+    description: "Spécifications techniques : 101_agent_RH_technique.pdf",
+    url: "https://adminevariste.sharepoint.com/:b:/s/outils-prospectives/IQDmo8NeCQw9Q7JtoiojhSDIAS4NbitF-n3VvMq3QihT4y0?e=Nmeloh",
+    icon: "users",
+    badge: "Document PDF"
   },
   {
-    id: "communication",
-    name: "Site de communication",
-    description: "Communication interne et externe de l'entreprise",
-    url: "#",
-    icon: "megaphone"
+    id: "doc-veille-sociale",
+    name: "Doc Technique — Veille Sociale",
+    description: "Spécifications techniques : 108_veille_sociale.pdf",
+    url: "https://adminevariste.sharepoint.com/:b:/s/outils-prospectives/IQDg110KdvyTQqfT-Aw6qYdLAUDs51m8PRGoGW30-fxDxvY?e=tivHgx",
+    icon: "megaphone",
+    badge: "Document PDF"
+  },
+  {
+    id: "doc-agent-juridique",
+    name: "Doc Technique — Agent Juridique",
+    description: "Spécifications techniques : 201_agent_juridique_technique.pdf",
+    url: "https://adminevariste.sharepoint.com/:b:/s/outils-prospectives/IQD74LPujjtaQatpsJhuuouRAVWdd9B1ECFlHPpSzRXSLgQ?e=6yumgA",
+    icon: "scales",
+    badge: "Document PDF"
+  },
+  {
+    id: "doc-agent-fntp",
+    name: "Doc Technique — Agent FNTP",
+    description: "Spécifications techniques : 803_IP_FNTP.pdf",
+    url: "https://adminevariste.sharepoint.com/:b:/s/outils-prospectives/IQCAc5kUZY8LRItTVCFWzmLFAflRLzztZVEYYXWameFy8dk?e=gugewJ",
+    icon: "bot",
+    badge: "Document PDF"
   }
 ];
 
