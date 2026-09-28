@@ -194,95 +194,67 @@ const AGENTS_DATA = [
 /* ---- Liens vers les sites SharePoint ---- */
 const SHAREPOINT_LINKS = [
   {
-    id: "outils-prospectives-home",
-    name: "Outils Prospectives — Home",
-    description: "Page d'accueil du site SharePoint Outils Prospectives",
+    id: "compilation-outils-prospectives",
+    name: "Compilation des Outils Prospectives",
+    description: "Page d'accueil du portail SharePoint Outils Prospectives",
     url: "https://adminevariste.sharepoint.com/sites/outils-prospectives",
     icon: "compass"
   },
   {
-    id: "sp-assistant-juridique",
-    name: "Assistant Juridique",
-    description: "Page SharePoint de l'Assistant Juridique",
+    id: "sp-juridique",
+    name: "Juridique",
+    description: "Page SharePoint du domaine Juridique (Assistant Juridique & TP_JuriTravaux)",
     url: "",
     icon: "scales"
   },
   {
-    id: "sp-assistant-qse",
-    name: "Assistant QSE",
-    description: "Page SharePoint de l'Assistant QSE",
+    id: "sp-qse",
+    name: "Qualité Sécurité Environnement",
+    description: "Page SharePoint QSE (Assistant QSE & TP_CompagnonQSE)",
     url: "https://adminevariste.sharepoint.com/sites/outils-prospectives/SitePages/Assistant-QSE.aspx",
     icon: "shield"
   },
   {
-    id: "sp-chatbot-fntp",
-    name: "Chatbot FNTP",
-    description: "Page SharePoint du Chatbot FNTP",
+    id: "sp-competences-fntp",
+    name: "Compétences FNTP",
+    description: "Page SharePoint dédiée aux compétences FNTP",
     url: "",
     icon: "megaphone"
   },
   {
     id: "sp-analyse-dce",
-    name: "Analyse DCE",
+    name: "Document de Consultation des Entreprises",
     description: "Page SharePoint de l'agent Analyse DCE",
     url: "https://adminevariste.sharepoint.com/sites/outils-prospectives/SitePages/Analyse-DCE.aspx",
     icon: "document"
   },
   {
-    id: "sp-assistant-travaux",
-    name: "Assistant Travaux",
+    id: "sp-travaux-technique-production",
+    name: "Travaux Technique Production",
     description: "Page SharePoint de l'Assistant Travaux",
     url: "https://adminevariste.sharepoint.com/sites/outils-prospectives/SitePages/Assistant-Travaux.aspx",
     icon: "hardhat"
   },
   {
-    id: "sp-assistant-rh",
-    name: "Assistant RH",
-    description: "Page SharePoint de l'Assistant RH",
+    id: "sp-ressources-humaines",
+    name: "Ressources Humaines",
+    description: "Page SharePoint des Ressources Humaines (Assistant RH)",
     url: "",
     icon: "users"
   },
   {
-    id: "sp-pulseia",
-    name: "PulseIA",
-    description: "Page SharePoint de PulseIA",
+    id: "sp-veille-technologique",
+    name: "Veille Technologique",
+    description: "Page SharePoint de Veille Technologique (PulseIA & ClinovIA)",
     url: "",
     icon: "sparkles"
   },
   {
-    id: "sp-tp-monitor",
-    name: "TP_Monitor",
-    description: "Page SharePoint de TP_Monitor",
+    id: "sp-veille-btp",
+    name: "Veille BTP",
+    description: "Page SharePoint de Veille BTP (TP_Monitor & AO_Radar)",
     url: "",
     icon: "chart"
-  },
-  {
-    id: "sp-clinovia",
-    name: "ClinovIA",
-    description: "Page SharePoint de ClinovIA",
-    url: "",
-    icon: "brain"
-  },
-  {
-    id: "sp-ao-radar",
-    name: "AO_Radar",
-    description: "Page SharePoint de AO_Radar",
-    url: "",
-    icon: "radar"
-  },
-  {
-    id: "sp-tp-juritravaux",
-    name: "TP_JuriTravaux",
-    description: "Page SharePoint de TP_JuriTravaux",
-    url: "",
-    icon: "gavel"
-  },
-  {
-    id: "sp-tp-compagnonqse",
-    name: "TP_CompagnonQSE",
-    description: "Page SharePoint de TP_CompagnonQSE",
-    url: "",
-    icon: "clipboard"
   }
 ];
 
