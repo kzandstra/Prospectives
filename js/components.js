@@ -157,27 +157,46 @@ function createFilterButton(category, isActive) {
 
 /* ---- Create News Section Content ---- */
 function createNewsContent() {
-  if (SITE_CONFIG.newsIframeUrl) {
-    return `
-      <div class="news-frame-header" style="display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; background: rgba(15, 23, 42, 0.7); border-bottom: 1px solid var(--border); border-top-left-radius: var(--radius-lg); border-top-right-radius: var(--radius-lg);">
-        <div style="display: flex; align-items: center; gap: 8px; font-size: 0.9rem; font-weight: 500; color: var(--text-secondary);">
-          ${getIcon("news")} Liste SharePoint — Veille IA
-        </div>
-        <a href="${SITE_CONFIG.newsIframeUrl}" target="_blank" rel="noopener noreferrer" class="btn btn--secondary" style="padding: 6px 14px; font-size: 0.85rem; text-decoration: none;">
-          ${getIcon("externalLink")} Ouvrir sur SharePoint
-        </a>
-      </div>
-      <iframe class="news-iframe" src="${SITE_CONFIG.newsIframeUrl}" title="Nouvelles IA" loading="lazy" style="border-bottom-left-radius: var(--radius-lg); border-bottom-right-radius: var(--radius-lg); height: 600px;"></iframe>
-    `;
-  }
+  const newsUrl = SITE_CONFIG.newsIframeUrl || "https://adminevariste.sharepoint.com/sites/outils-prospectives/Lists/Veille%20IA/AllItems.aspx";
 
   return `
-    <div class="news-placeholder">
-      <div class="news-placeholder__icon">
+    <div class="news-launcher">
+      <div class="news-launcher__badge">
+        <span class="hero__badge-dot" aria-hidden="true"></span>
+        Espace Collaboratif SharePoint
+      </div>
+      <div class="news-launcher__icon">
         ${getIcon("news")}
       </div>
-      <div class="news-placeholder__title">Nouvelles IA</div>
-      <p class="news-placeholder__text">${SITE_CONFIG.newsPlaceholderText}</p>
+      <h3 class="news-launcher__title">Veille IA & Actualités</h3>
+      <p class="news-launcher__desc">
+        Accédez à la liste SharePoint centralisée pour consulter la veille technologique, les innovations du secteur et les actualités IA de Prospectives.
+      </p>
+
+      <div class="news-launcher__features">
+        <div class="news-feature-item">
+          <div class="news-feature-item__title">
+            ${getIcon("sparkles")} Actualités IA
+          </div>
+          <div class="news-feature-item__desc">Suivez les dernières tendances et avancées technologiques.</div>
+        </div>
+        <div class="news-feature-item">
+          <div class="news-feature-item__title">
+            ${getIcon("bot")} Authentification M365
+          </div>
+          <div class="news-feature-item__desc">Accès sécurisé et direct avec vos identifiants d'entreprise.</div>
+        </div>
+        <div class="news-feature-item">
+          <div class="news-feature-item__title">
+            ${getIcon("document")} Espace Partagé
+          </div>
+          <div class="news-feature-item__desc">Consultez et contribuez aux éléments de veille de l'équipe.</div>
+        </div>
+      </div>
+
+      <a href="${newsUrl}" target="_blank" rel="noopener noreferrer" class="btn btn--primary news-launcher__cta">
+        ${getIcon("externalLink")} Consulter la liste SharePoint Veille IA
+      </a>
     </div>
   `;
 }
