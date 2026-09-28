@@ -158,7 +158,17 @@ function createFilterButton(category, isActive) {
 /* ---- Create News Section Content ---- */
 function createNewsContent() {
   if (SITE_CONFIG.newsIframeUrl) {
-    return `<iframe class="news-iframe" src="${SITE_CONFIG.newsIframeUrl}" title="Nouvelles IA" loading="lazy"></iframe>`;
+    return `
+      <div class="news-frame-header" style="display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; background: rgba(15, 23, 42, 0.7); border-bottom: 1px solid var(--border); border-top-left-radius: var(--radius-lg); border-top-right-radius: var(--radius-lg);">
+        <div style="display: flex; align-items: center; gap: 8px; font-size: 0.9rem; font-weight: 500; color: var(--text-secondary);">
+          ${getIcon("news")} Liste SharePoint — Veille IA
+        </div>
+        <a href="${SITE_CONFIG.newsIframeUrl}" target="_blank" rel="noopener noreferrer" class="btn btn--secondary" style="padding: 6px 14px; font-size: 0.85rem; text-decoration: none;">
+          ${getIcon("externalLink")} Ouvrir sur SharePoint
+        </a>
+      </div>
+      <iframe class="news-iframe" src="${SITE_CONFIG.newsIframeUrl}" title="Nouvelles IA" loading="lazy" style="border-bottom-left-radius: var(--radius-lg); border-bottom-right-radius: var(--radius-lg); height: 600px;"></iframe>
+    `;
   }
 
   return `

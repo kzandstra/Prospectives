@@ -258,7 +258,7 @@ const SITE_CONFIG = {
   pageTitle: "Agents IA — Copilot Studio",
   heroTitle: "Vos Agents IA",
   heroSubtitle: "Découvrez et accédez aux assistants intelligents développés avec Microsoft Copilot Studio pour simplifier votre quotidien.",
-  newsIframeUrl: "",
+  newsIframeUrl: "https://adminevariste.sharepoint.com/sites/outils-prospectives/Lists/Veille%20IA/AllItems.aspx",
   newsPlaceholderText: "L'intégration de la liste SharePoint des nouvelles IA sera affichée ici. Configurez l'URL dans le fichier agents-data.js."
 };
 

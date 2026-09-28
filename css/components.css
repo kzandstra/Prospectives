@@ -164,6 +164,17 @@
   color: var(--blue-light);
   margin-bottom: var(--space-8);
   backdrop-filter: blur(10px);
+  text-decoration: none;
+  cursor: pointer;
+  transition: background var(--transition-fast), border-color var(--transition-fast), transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.hero__badge:hover {
+  background: rgba(74, 144, 217, 0.18);
+  border-color: rgba(74, 144, 217, 0.4);
+  color: var(--white);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(74, 144, 217, 0.2);
 }
 
 .hero__badge-dot {
