@@ -92,6 +92,7 @@ const AGENTS_DATA = [
     shortDesc: "Congés, paie, formation : toutes vos questions RH en un clic.",
     longDesc: "L'Assistant RH répond à toutes vos questions relatives aux ressources humaines : gestion des congés et absences, informations sur la paie, catalogue de formations, procédures d'embauche, conventions collectives et bien plus.",
     embedUrl: "https://adminevariste.sharepoint.com/sites/outils-prospectives/Documents%20partages/Copilot%20Studio%20Agents?id=/sites/outils-prospectives/Documents%20partages/Copilot%20Studio%20Agents/Assistant%20RH_cr27b_assistantRhnOISmd.agent&parent=/sites/outils-prospectives/Documents%20partages/Copilot%20Studio%20Agents",
+    sharepointPageUrl: "https://adminevariste.sharepoint.com/sites/Direction_RH/SitePages/CollabHome.aspx?spStartSource=spappbar",
     docTechniqueUrl: "https://adminevariste.sharepoint.com/:b:/s/outils-prospectives/IQDmo8NeCQw9Q7JtoiojhSDIAS4NbitF-n3VvMq3QihT4y0?e=Nmeloh",
     docTechniqueName: "101_agent_RH_technique.pdf",
     docVeilleSocialeUrl: "https://adminevariste.sharepoint.com/:b:/s/outils-prospectives/IQDg110KdvyTQqfT-Aw6qYdLAUDs51m8PRGoGW30-fxDxvY?e=tivHgx",
@@ -241,7 +242,7 @@ const SHAREPOINT_LINKS = [
     id: "sp-ressources-humaines",
     name: "Ressources Humaines",
     description: "Page SharePoint des Ressources Humaines (Assistant RH)",
-    url: "",
+    url: "https://adminevariste.sharepoint.com/sites/Direction_RH/SitePages/CollabHome.aspx?spStartSource=spappbar",
     icon: "users"
   },
   {
