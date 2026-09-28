@@ -590,14 +590,20 @@
   transition: all var(--transition-base);
   text-decoration: none;
   color: inherit;
+  height: 100%;
 }
 
-.sp-card:hover {
+.sp-card:hover:not(.sp-card--disabled) {
   transform: translateY(-3px);
   border-color: var(--border-hover);
   box-shadow: var(--shadow-md);
   background: var(--surface-hover);
   color: inherit;
+}
+
+.sp-card--disabled {
+  opacity: 0.65;
+  cursor: default;
 }
 
 .sp-card__icon {
@@ -617,25 +623,43 @@
   height: 22px;
 }
 
-.sp-card__content { flex: 1; min-width: 0; }
+.sp-card__content {
+  flex: 1;
+  min-width: 0;
+}
 
-.sp-card__badge {
-  display: inline-block;
-  font-size: var(--text-xs);
-  padding: 2px 8px;
-  background: rgba(74, 144, 217, 0.15);
-  border: 1px solid rgba(74, 144, 217, 0.3);
-  color: var(--blue-light);
+.sp-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+  margin-bottom: var(--space-1);
+}
+
+.sp-card__tag {
+  font-size: 0.7rem;
+  padding: 2px 7px;
   border-radius: var(--radius-full);
-  margin-bottom: 6px;
   font-weight: 500;
+  flex-shrink: 0;
+}
+
+.sp-card__tag.active {
+  background: rgba(74, 144, 217, 0.15);
+  color: var(--blue-light);
+  border: 1px solid rgba(74, 144, 217, 0.3);
+}
+
+.sp-card__tag.muted {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-muted);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .sp-card__title {
   font-size: var(--text-base);
   font-weight: 600;
   color: var(--text-primary);
-  margin-bottom: var(--space-1);
 }
 
 .sp-card__description {

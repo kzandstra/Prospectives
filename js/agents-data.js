@@ -198,66 +198,91 @@ const SHAREPOINT_LINKS = [
     name: "Outils Prospectives — Home",
     description: "Page d'accueil du site SharePoint Outils Prospectives",
     url: "https://adminevariste.sharepoint.com/sites/outils-prospectives",
-    icon: "compass",
-    badge: "Accueil"
+    icon: "compass"
   },
   {
-    id: "sp-assistant-travaux",
-    name: "Assistant Travaux",
-    description: "Page SharePoint dédiée à l'Assistant Travaux",
-    url: "https://adminevariste.sharepoint.com/sites/outils-prospectives/SitePages/Assistant-Travaux.aspx",
-    icon: "hardhat",
-    badge: "Page SharePoint"
-  },
-  {
-    id: "sp-analyse-dce",
-    name: "Analyse DCE",
-    description: "Page SharePoint dédiée à l'agent Analyse DCE",
-    url: "https://adminevariste.sharepoint.com/sites/outils-prospectives/SitePages/Analyse-DCE.aspx",
-    icon: "document",
-    badge: "Page SharePoint"
+    id: "sp-assistant-juridique",
+    name: "Assistant Juridique",
+    description: "Page SharePoint de l'Assistant Juridique",
+    url: "",
+    icon: "scales"
   },
   {
     id: "sp-assistant-qse",
     name: "Assistant QSE",
-    description: "Page SharePoint dédiée à l'Assistant QSE",
+    description: "Page SharePoint de l'Assistant QSE",
     url: "https://adminevariste.sharepoint.com/sites/outils-prospectives/SitePages/Assistant-QSE.aspx",
-    icon: "shield",
-    badge: "Page SharePoint",
-    docUrl: "https://adminevariste.sharepoint.com/:b:/s/outils-prospectives/IQBFu8z8fBF4S5xXSTggfloNAbybaW775RNYa0NHph4VaFo?e=TvOvCj",
-    docName: "501_agent_QSE_technique.pdf"
+    icon: "shield"
   },
   {
-    id: "doc-assistant-rh",
-    name: "Doc Technique — Assistant RH",
-    description: "Spécifications techniques : 101_agent_RH_technique.pdf",
-    url: "https://adminevariste.sharepoint.com/:b:/s/outils-prospectives/IQDmo8NeCQw9Q7JtoiojhSDIAS4NbitF-n3VvMq3QihT4y0?e=Nmeloh",
-    icon: "users",
-    badge: "Document PDF"
+    id: "sp-chatbot-fntp",
+    name: "Chatbot FNTP",
+    description: "Page SharePoint du Chatbot FNTP",
+    url: "",
+    icon: "megaphone"
   },
   {
-    id: "doc-veille-sociale",
-    name: "Doc Technique — Veille Sociale",
-    description: "Spécifications techniques : 108_veille_sociale.pdf",
-    url: "https://adminevariste.sharepoint.com/:b:/s/outils-prospectives/IQDg110KdvyTQqfT-Aw6qYdLAUDs51m8PRGoGW30-fxDxvY?e=tivHgx",
-    icon: "megaphone",
-    badge: "Document PDF"
+    id: "sp-analyse-dce",
+    name: "Analyse DCE",
+    description: "Page SharePoint de l'agent Analyse DCE",
+    url: "https://adminevariste.sharepoint.com/sites/outils-prospectives/SitePages/Analyse-DCE.aspx",
+    icon: "document"
   },
   {
-    id: "doc-agent-juridique",
-    name: "Doc Technique — Agent Juridique",
-    description: "Spécifications techniques : 201_agent_juridique_technique.pdf",
-    url: "https://adminevariste.sharepoint.com/:b:/s/outils-prospectives/IQD74LPujjtaQatpsJhuuouRAVWdd9B1ECFlHPpSzRXSLgQ?e=6yumgA",
-    icon: "scales",
-    badge: "Document PDF"
+    id: "sp-assistant-travaux",
+    name: "Assistant Travaux",
+    description: "Page SharePoint de l'Assistant Travaux",
+    url: "https://adminevariste.sharepoint.com/sites/outils-prospectives/SitePages/Assistant-Travaux.aspx",
+    icon: "hardhat"
   },
   {
-    id: "doc-agent-fntp",
-    name: "Doc Technique — Agent FNTP",
-    description: "Spécifications techniques : 803_IP_FNTP.pdf",
-    url: "https://adminevariste.sharepoint.com/:b:/s/outils-prospectives/IQCAc5kUZY8LRItTVCFWzmLFAflRLzztZVEYYXWameFy8dk?e=gugewJ",
-    icon: "bot",
-    badge: "Document PDF"
+    id: "sp-assistant-rh",
+    name: "Assistant RH",
+    description: "Page SharePoint de l'Assistant RH",
+    url: "",
+    icon: "users"
+  },
+  {
+    id: "sp-pulseia",
+    name: "PulseIA",
+    description: "Page SharePoint de PulseIA",
+    url: "",
+    icon: "sparkles"
+  },
+  {
+    id: "sp-tp-monitor",
+    name: "TP_Monitor",
+    description: "Page SharePoint de TP_Monitor",
+    url: "",
+    icon: "chart"
+  },
+  {
+    id: "sp-clinovia",
+    name: "ClinovIA",
+    description: "Page SharePoint de ClinovIA",
+    url: "",
+    icon: "brain"
+  },
+  {
+    id: "sp-ao-radar",
+    name: "AO_Radar",
+    description: "Page SharePoint de AO_Radar",
+    url: "",
+    icon: "radar"
+  },
+  {
+    id: "sp-tp-juritravaux",
+    name: "TP_JuriTravaux",
+    description: "Page SharePoint de TP_JuriTravaux",
+    url: "",
+    icon: "gavel"
+  },
+  {
+    id: "sp-tp-compagnonqse",
+    name: "TP_CompagnonQSE",
+    description: "Page SharePoint de TP_CompagnonQSE",
+    url: "",
+    icon: "clipboard"
   }
 ];
 

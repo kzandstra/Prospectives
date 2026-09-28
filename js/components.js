@@ -109,30 +109,28 @@ function createAgentCard(agent) {
 
 /* ---- Create SharePoint Link Card HTML ---- */
 function createSharePointCard(link) {
-  const badgeHtml = link.badge ? `<span class="sp-card__badge">${link.badge}</span>` : "";
-  const docHtml = link.docUrl ? `
-    <div style="margin-top: 8px; padding-top: 8px; border-top: 1px dashed rgba(255,255,255,0.1);">
-      <a href="${link.docUrl}" target="_blank" rel="noopener noreferrer" class="btn btn--secondary" style="font-size: 0.78rem; padding: 4px 10px; display: inline-flex; align-items: center; gap: 4px; text-decoration: none;" onclick="event.stopPropagation();">
-        ${getIcon("document")} ${link.docName || "Doc Technique (PDF)"} ↗
-      </a>
-    </div>
-  ` : "";
+  const hasUrl = link.url && link.url.trim() !== "" && link.url !== "#";
+  const tagHtml = hasUrl
+    ? `<span class="sp-card__tag active">SharePoint</span>`
+    : `<span class="sp-card__tag muted">À venir</span>`;
+
+  const hrefAttr = hasUrl ? `href="${link.url}" target="_blank" rel="noopener noreferrer"` : `href="javascript:void(0)"`;
+  const cardClass = hasUrl ? `sp-card fade-in` : `sp-card sp-card--disabled fade-in`;
 
   return `
-    <div class="sp-card fade-in" id="sp-${link.id}">
-      <a href="${link.url}" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; gap: var(--space-4); text-decoration: none; color: inherit; width: 100%;">
-        <div class="sp-card__icon">
-          ${getIcon(link.icon)}
-        </div>
-        <div class="sp-card__content">
-          ${badgeHtml}
+    <a ${hrefAttr} class="${cardClass}" id="sp-${link.id}">
+      <div class="sp-card__icon">
+        ${getIcon(link.icon)}
+      </div>
+      <div class="sp-card__content">
+        <div class="sp-card__header">
           <div class="sp-card__title">${link.name}</div>
-          <div class="sp-card__description">${link.description}</div>
-          ${docHtml}
+          ${tagHtml}
         </div>
-        <span class="sp-card__arrow">${getIcon("arrowRight")}</span>
-      </a>
-    </div>
+        <div class="sp-card__description">${link.description}</div>
+      </div>
+      <span class="sp-card__arrow">${hasUrl ? getIcon("arrowRight") : ""}</span>
+    </a>
   `;
 }
 
