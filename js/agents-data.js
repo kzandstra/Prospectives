@@ -16,6 +16,7 @@ const AGENTS_DATA = [
     shortDesc: "Consultez la réglementation et obtenez des réponses juridiques adaptées au secteur des travaux publics.",
     longDesc: "L'Assistant Juridique vous accompagne dans vos recherches réglementaires et juridiques. Il peut répondre à vos questions sur le droit du travail, les marchés publics, la responsabilité civile et pénale, et bien plus encore. Basé sur une base de connaissances actualisée, il fournit des réponses précises et sourcées.",
     embedUrl: "https://adminevariste.sharepoint.com/sites/outils-prospectives/Documents%20partages/Copilot%20Studio%20Agents?id=/sites/outils-prospectives/Documents%20partages/Copilot%20Studio%20Agents/Assistant_juridique_v1_cr27b_assistantJuridique.agent&parent=/sites/outils-prospectives/Documents%20partages/Copilot%20Studio%20Agents",
+    sharepointPageUrl: "https://adminevariste.sharepoint.com/sites/outils-prospectives/SitePages/Assistant-Juridique.aspx",
     docTechniqueUrl: "https://adminevariste.sharepoint.com/:b:/s/outils-prospectives/IQD74LPujjtaQatpsJhuuouRAVWdd9B1ECFlHPpSzRXSLgQ?e=6yumgA",
     docTechniqueName: "201_agent_juridique_technique.pdf",
     demoVideoUrl: "",
@@ -205,7 +206,7 @@ const SHAREPOINT_LINKS = [
     id: "sp-juridique",
     name: "Juridique",
     description: "Page SharePoint du domaine Juridique (Assistant Juridique & TP_JuriTravaux)",
-    url: "",
+    url: "https://adminevariste.sharepoint.com/sites/outils-prospectives/SitePages/Assistant-Juridique.aspx",
     icon: "scales"
   },
   {
