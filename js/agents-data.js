@@ -47,6 +47,7 @@ const AGENTS_DATA = [
     shortDesc: "Informations, documentation et actualités de la Fédération Nationale des Travaux Publics.",
     longDesc: "Le Chatbot FNTP vous donne accès aux dernières actualités, publications et ressources documentaires de la Fédération Nationale des Travaux Publics. Restez informé des évolutions du secteur, des événements à venir et des positions de la fédération.",
     embedUrl: "https://adminevariste.sharepoint.com/sites/outils-prospectives/Documents%20partages/Copilot%20Studio%20Agents?id=/sites/outils-prospectives/Documents%20partages/Copilot%20Studio%20Agents/Chatbot%20IP%20FNTP_cr27b_chatbotIpFntp.agent&parent=/sites/outils-prospectives/Documents%20partages/Copilot%20Studio%20Agents",
+    sharepointPageUrl: "https://adminevariste.sharepoint.com/sites/outils-prospectives/SitePages/IP-FNTP.aspx",
     docTechniqueUrl: "https://adminevariste.sharepoint.com/:b:/s/outils-prospectives/IQCAc5kUZY8LRItTVCFWzmLFAflRLzztZVEYYXWameFy8dk?e=gugewJ",
     docTechniqueName: "803_IP_FNTP.pdf",
     demoVideoUrl: "",
@@ -218,7 +219,7 @@ const SHAREPOINT_LINKS = [
     id: "sp-competences-fntp",
     name: "Compétences FNTP",
     description: "Page SharePoint dédiée aux compétences FNTP",
-    url: "",
+    url: "https://adminevariste.sharepoint.com/sites/outils-prospectives/SitePages/IP-FNTP.aspx",
     icon: "megaphone"
   },
   {
