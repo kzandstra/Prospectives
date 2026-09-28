@@ -254,7 +254,7 @@ const DEMO_VIDEOS = [
 
 /* ---- Configuration générale ---- */
 const SITE_CONFIG = {
-  companyName: "EVARISTE",
+  companyName: "Prospectives",
   pageTitle: "Agents IA — Copilot Studio",
   heroTitle: "Vos Agents IA",
   heroSubtitle: "Découvrez et accédez aux assistants intelligents développés avec Microsoft Copilot Studio pour simplifier votre quotidien.",
