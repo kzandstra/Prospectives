@@ -1,6 +1,6 @@
-# Portail des Agents IA - EVARISTE
+# Portail des Agents IA - Prospectives
 
-Ce projet est une landing page moderne et interactive conçue pour centraliser et présenter le catalogue des **agents d'intelligence artificielle** de l'entreprise **EVARISTE**, développés à l'aide de **Microsoft Copilot Studio** et **Microsoft 365 Copilot**.
+Ce projet est une landing page moderne et interactive conçue pour centraliser et présenter le catalogue des **agents d'intelligence artificielle** de l'entreprise **Prospectives**, développés à l'aide de **Microsoft Copilot Studio** et **Microsoft 365 Copilot**.
 
 Le portail offre une interface utilisateur haut de gamme avec un design sombre (*dark mode*), des effets de flou de texture (*glassmorphism*), des micro-animations fluides, et permet aux collaborateurs d'explorer, de lancer et d'accéder aux détails de chaque agent IA disponible.
 
@@ -15,7 +15,7 @@ Le portail offre une interface utilisateur haut de gamme avec un design sombre (
    - **Agents Microsoft 365 & SharePoint** : Génération d'une carte de lancement dynamique interactive (*"Lancer dans Microsoft 365"* / *"Ouvrir sur SharePoint"*).
    - **Canaux Web Copilot Studio** : Affichage d'une fenêtre modale tchat intégrée via `<iframe>`.
 4. **Compteurs Statistiques Animés** : Animation dynamique au chargement comptabilisant le nombre d'agents total, le nombre de catégories et le nombre d'agents actifs.
-5. **Ressources SharePoint de l'entreprise** : Raccourcis visuels vers les portails et sites SharePoint internes d'EVARISTE.
+5. **Ressources SharePoint de l'entreprise** : Raccourcis visuels vers les portails et sites SharePoint internes de Prospectives.
 6. **Vidéos de Démo** : Galerie de démonstrations vidéo pour voir les agents en action (ouverture dans une modale vidéo).
 7. **Fil d'actualité IA** : Section dédiée affichant les dernières actualités IA (intégrable avec une liste SharePoint).
 

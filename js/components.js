@@ -223,7 +223,7 @@ function createAgentModal(agent) {
   if (agent && agent.embedUrl) {
     if (isExternalUrl(agent.embedUrl)) {
       const isM365 = agent.embedUrl.includes("m365.cloud.microsoft");
-      const platformName = isM365 ? "Microsoft 365 Copilot" : "SharePoint EVARISTE";
+      const platformName = isM365 ? "Microsoft 365 Copilot" : "SharePoint Prospectives";
       const iconType = isM365 ? "copilot" : "externalLink";
       const btnText = isM365 ? "Lancer l'agent dans Microsoft 365" : "Ouvrir l'agent sur SharePoint";
 

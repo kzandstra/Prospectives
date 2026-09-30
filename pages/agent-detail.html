@@ -181,7 +181,7 @@
       if (agent.embedUrl) {
         if (agent.embedUrl.includes("sharepoint.com") || agent.embedUrl.includes("m365.cloud.microsoft")) {
           const isM365 = agent.embedUrl.includes("m365.cloud.microsoft");
-          const platformName = isM365 ? "Microsoft 365 Copilot" : "SharePoint EVARISTE";
+          const platformName = isM365 ? "Microsoft 365 Copilot" : "SharePoint Prospectives";
           const btnText = isM365 ? "Lancer l'agent dans Microsoft 365" : "Ouvrir l'agent sur SharePoint";
           chatContent = `
             <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; padding: 3rem 2rem; text-align: center; background: var(--bg-secondary);">
